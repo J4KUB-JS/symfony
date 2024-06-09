@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }} Page title{% endblock title %}
+
+
+{% block body %}
+  <div>Starship Count {{ starshipCount }}</div>
+  <div>
+  {% if starshipCount > 100 %}
+    <div>A lot of Starship</div>
+  {% endif %}
+  </div>
+{% endblock body %}
